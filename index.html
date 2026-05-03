@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cazador de Meteoritos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Mini arcade espacial</p>
+      <h1>Cazador de Meteoritos</h1>
+      <p class="intro">Pilota la nave, recoge cristales y esquiva meteoritos el mayor tiempo posible.</p>
+    </section>
+
+    <section class="game-card">
+      <div class="hud" aria-label="Marcador del juego">
+        <div>
+          <span>Puntos</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span>Combo</span>
+          <strong id="combo">x1</strong>
+        </div>
+        <div>
+          <span>Récord</span>
+          <strong id="best">0</strong>
+        </div>
+      </div>
+
+      <canvas id="game" width="900" height="560" aria-label="Juego Cazador de Meteoritos"></canvas>
+
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">Listo para despegar</h2>
+        <p id="overlay-text">Muévete con WASD o flechas. En móvil, arrastra el dedo sobre el tablero.</p>
+        <button id="start-button" type="button">Jugar</button>
+      </div>
+    </section>
+
+    <section class="controls">
+      <p><strong>Controles:</strong> Flechas / WASD para moverte. Pulsa espacio para empezar o reiniciar.</p>
+      <p>Consejo: los cristales dorados aumentan el combo, pero cada meteorito que pasa vuelve la galaxia un poco más traviesa.</p>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
